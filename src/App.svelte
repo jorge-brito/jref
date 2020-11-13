@@ -36,6 +36,7 @@
 		width: 95%;
 		height: 95%;
 		min-width: 300px;
+		max-width: 800px;
 		margin: auto auto;
 		box-shadow: 0 3px 16px rgba(32,32,32,.2);
 		border-radius: 20px;
