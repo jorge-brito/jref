@@ -85,10 +85,10 @@
             <span class="link">Disponível em: &lt;<a href={params.link}>{params.link}</a>&gt;. </span>
             <span class="date">Acesso em: {params.date}.</span>
         {:else}
+            <span class="name">{params.name}. </span>
             <span class="el title" title="Título">
                 <strong>{params.title}{#if params.subtitle}:{:else}.{/if}</strong> 
             </span>
-            <span class="name">{params.name}. </span>
             {#if params.subtitle}
                 <span class="el subtitle" title="Subtítulo">
                     <strong> {params.subtitle}.</strong>
