@@ -27,6 +27,12 @@
 		<Router {routes} />
 	</div>
 </main>
+<footer>
+	Feito por <em><strong>Jorge Pereira</strong></em>. <br>
+	<a href="https://github.com/jorge-brito/jref">
+		<i class="mdi mdi-github"></i>
+	</a>
+</footer>
 
 <style>
 	main {
@@ -39,8 +45,21 @@
 		max-width: 800px;
 		margin: auto auto;
 		box-shadow: 0 3px 16px rgba(32,32,32,.2);
-		border-radius: 20px;
 		overflow: hidden;
+		margin-top: 1rem;
+	}
+
+	footer {
+		padding: 1rem;
+		margin-top: 1.3rem;
+		text-align: center;
+		line-height: .85cm;
+		border-top: 1px solid rgba(32,32,32,.2);
+	}
+
+	footer a {
+		color: #333;
+		font-size: 1.5em;
 	}
 
 	nav {
