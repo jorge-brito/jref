@@ -17,7 +17,7 @@
 
 </script>
 
-<main>
+<main class="page">
 	<h1>Referênciar livro</h1>
 
 	<div class="params">
@@ -71,48 +71,7 @@
 </main>
 
 <style>
-	main {
-		width: 100%;
-		padding: 1em;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #5FC5EB;
-		text-transform: uppercase;
-		font-size: 2em;
-		font-weight: 100;
-		text-align: center;
-		margin: 1rem auto 2rem auto;
-	}
-
 	.params {
-		display: grid;
-		grid-template-rows: repeat(3, 1fr);
-		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas: "authors date" "subtitle location" "edition editor" "title title";
-		row-gap: 1rem;
-		column-gap: 1rem;
-		max-width: 520px;
-		margin: 0 auto;
-	}
-	.params > div {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		grid-area: var(--n)
-	}
-
-	.params > div input {
-		width: 100%;
-		padding: 0.5rem;
-		margin-top: 0.5rem;
-		border-radius: 3px;
-		outline: none;
-		border: 1px solid rgba(33, 33, 33, .2);
-	}
-
-	.params > div input:focus {
-		box-shadow: 0 0 6px 1px rgba(41, 159, 255, 0.26);
 	}
 </style>

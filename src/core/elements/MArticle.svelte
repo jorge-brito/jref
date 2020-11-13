@@ -60,9 +60,9 @@
             return
 
         if (!authors)
-            return title.toUpperCase();
+            return title.toUpperCase().trim();
         else 
-            return title;
+            return title.trim();
     }
 
     let Authors, oneName;

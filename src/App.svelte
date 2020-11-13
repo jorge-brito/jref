@@ -39,14 +39,26 @@
 		display: grid;
 		grid-template-columns: max-content auto;
 		grid-template-rows: 100%;
-		width: 95%;
-		height: 95%;
 		min-width: 300px;
 		max-width: 800px;
-		margin: auto auto;
+		margin: 0 auto;
 		box-shadow: 0 3px 16px rgba(32,32,32,.2);
 		overflow: hidden;
-		margin-top: 1rem;
+	}
+
+	@media (max-width: 400px) {
+		main {
+			width: 95%;
+			height: 95%;
+			margin: 0;
+		}
+	}
+
+	@media (min-width: 400px) {
+		main {
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	footer {

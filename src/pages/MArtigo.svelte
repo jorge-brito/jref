@@ -17,8 +17,8 @@
 
 </script>
 
-<main>
-	<h1>Artigo de revista</h1>
+<main class="page">
+	<h1>Referenciar Artigo de revista</h1>
 
 	<div class="params">
 		<div style="--n: authors">
@@ -48,7 +48,7 @@
 		</div>
 	
 		<div style="--n: location">
-			<label for="location">Local de publicação</label>
+			<label for="location">Local</label>
 			<input type="text" name="location" placeholder="Local de publicação" bind:value={params.location}>
         </div>
         
@@ -78,57 +78,13 @@
 </main>
 
 <style>
-	main {
-		padding: 1em;
-		width: 100%;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #5FC5EB;
-		text-transform: uppercase;
-		font-size: 2em;
-		font-weight: 100;
-		text-align: center;
-		margin: 1rem auto 2rem auto;
-    }
-    
-    small {
-        margin-top: 0.25rem;
-    }
 
 	.params {
-		display: grid;
-		grid-template-rows: repeat(3, max-content);
-		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas: "authors magazine" "location access" "details date" "title title" "link link";
-		row-gap: 1rem;
-		column-gap: 1rem;
-        max-width: 520px;
-		margin: 0 auto;
-    }
-    
-	.params > div {
-		display: flex;
-		flex-direction: column;
-        align-items: flex-start;
-		grid-area: var(--n)
-    }
-    
+	}
+
     .params > div:nth-child(3) {
         margin-top: auto;
     }
 
-	.params > div input {
-		width: 100%;
-		padding: 0.5rem;
-		margin-top: 0.5rem;
-		border-radius: 3px;
-		outline: none;
-		border: 1px solid rgba(33, 33, 33, .2);
-	}
-
-	.params > div input:focus {
-		box-shadow: 0 0 6px 1px rgba(41, 159, 255, 0.26);
-	}
 </style>

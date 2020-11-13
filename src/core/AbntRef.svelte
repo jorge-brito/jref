@@ -115,7 +115,7 @@
     }
 
     .container {
-        max-width: 520px;
+        max-width: 560px;
         border: 1px solid rgba(32, 32, 32, 0.2);
         border-radius: 5px;
     }
